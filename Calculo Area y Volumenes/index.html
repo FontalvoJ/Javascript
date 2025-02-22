@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-4">Calculadora de Figuras Geométricas</h1>
+
+        <label for="figura" class="block text-sm font-medium text-gray-700">Seleccione una figura geométrica:</label>
+        <select id="figura"
+            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <option value="">--Seleccione--</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="rectangulo">Rectángulo</option>
+            <option value="triangulo">Triángulo</option>
+            <option value="circulo">Círculo</option>
+            <option value="esfera">Esfera</option>
+            <option value="cubo">Cubo</option>
+        </select>
+
+        <div class="mt-4 flex justify-between">
+            <button id="calcularArea"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Calcular Área
+            </button>
+            <button id="calcularVolumen"
+                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Calcular Volumen
+            </button>
+        </div>
+
+        <div id="resultado" class="mt-4 text-gray-700"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
